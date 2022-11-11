@@ -1,4 +1,4 @@
-package Example1;
+package two_sum;
 
 import java.util.Arrays;
 

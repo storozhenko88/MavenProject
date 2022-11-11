@@ -1,4 +1,4 @@
-package Example1;
+package two_sum;
 
 import org.junit.Assert;
 import org.junit.Test;

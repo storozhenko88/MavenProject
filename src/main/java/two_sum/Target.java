@@ -1,4 +1,4 @@
-package Example1;
+package two_sum;
 
 public class Target {
 
