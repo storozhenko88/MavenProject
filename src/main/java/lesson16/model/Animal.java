@@ -12,8 +12,8 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class Animal {
 
-    private TypeAnimal Type;
-    private String nickName;
+    private TypeAnimal type;
+    private String nickname;
     private int age;
 }
 
