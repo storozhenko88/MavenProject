@@ -2,18 +2,15 @@ package lesson16.service;
 
 import lesson16.enums.TypeAnimal;
 import lesson16.model.Animal;
-
 import java.util.*;
 
 
 public class AnimalShelter {
 
     private List<Animal> animals = new ArrayList<>();
-    private AnimalSerializer serializer = new AnimalSerializer();
-    private int choice;
+    private final AnimalSerializer serializer = new AnimalSerializer();
 
     public AnimalShelter() {
-
         if (serializer.deserialize() != null)
             animals = serializer.deserialize();
     }
@@ -22,10 +19,14 @@ public class AnimalShelter {
         return animals;
     }
 
-    public void addAnimal(Animal animal) {
+    public boolean addAnimal(Animal animal) {
 
-        animals.add(animal);
-        serializer.serialize(animals);
+        if (animal.getNickname() != null & animal.getAge() > 0) {
+            animals.add(animal);
+            serializer.serialize(animals);
+            return true;
+        }
+        else return false;
     }
 
     public boolean pickUpAnimal(TypeAnimal type, String nickname) {

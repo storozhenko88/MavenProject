@@ -5,7 +5,6 @@ import lesson16.model.Animal;
 import lesson16.service.AnimalShelter;
 import java.util.Scanner;
 
-
 public class Main {
     public static void main(String[] args) {
 
@@ -61,5 +60,6 @@ public class Main {
                 default -> System.out.println("you entered the wrong number, try again");
             }
         } while (choice != 0);
+        scanner.close();
     }
 }

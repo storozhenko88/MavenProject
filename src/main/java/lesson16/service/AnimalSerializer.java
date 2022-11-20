@@ -11,7 +11,6 @@ import java.util.List;
 public class AnimalSerializer {
 
     private final String path = "src/main/resources/animal.json";
-
     private final JsonMapper mapper = new JsonMapper();
 
     public void serialize(List<Animal> animals) {
@@ -23,14 +22,12 @@ public class AnimalSerializer {
     }
 
     public List<Animal> deserialize() {
-        List<Animal> animals = null;
         File animalsFile = new File(path);
         try {
-            animals = mapper.readValue(animalsFile, new TypeReference<List<Animal>>() {});
-
+            return mapper.readValue(animalsFile, new TypeReference<List<Animal>>() {});
         } catch (IOException e) {
             System.out.println("Cannot read file");
+            return null;
         }
-        return animals;
     }
 }
