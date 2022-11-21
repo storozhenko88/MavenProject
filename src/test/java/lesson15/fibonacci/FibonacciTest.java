@@ -1,5 +1,6 @@
-package fibonacci;
+package lesson15.fibonacci;
 
+import lesson15.fibonacci.Fibonacci;
 import org.junit.Assert;
 import org.junit.Test;
 

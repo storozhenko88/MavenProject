@@ -1,5 +1,6 @@
-package two_sum;
+package lesson15.two_sum;
 
+import lesson15.two_sum.Target;
 import org.junit.Assert;
 import org.junit.Test;
 

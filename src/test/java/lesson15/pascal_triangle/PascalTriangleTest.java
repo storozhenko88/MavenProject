@@ -1,5 +1,6 @@
-package pascal_triangle;
+package lesson15.pascal_triangle;
 
+import lesson15.pascal_triangle.PascalTriangle;
 import org.junit.Assert;
 import org.junit.Test;
 

@@ -1,4 +1,4 @@
-package pascal_triangle;
+package lesson15.pascal_triangle;
 
 public class Main {
 

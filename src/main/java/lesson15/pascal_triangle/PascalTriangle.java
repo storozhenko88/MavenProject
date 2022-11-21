@@ -1,4 +1,4 @@
-package pascal_triangle;
+package lesson15.pascal_triangle;
 
 import java.util.ArrayList;
 import java.util.List;

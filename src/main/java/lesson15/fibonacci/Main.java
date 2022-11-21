@@ -1,4 +1,4 @@
-package fibonacci;
+package lesson15.fibonacci;
 
 public class Main {
 

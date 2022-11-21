@@ -1,4 +1,4 @@
-package two_sum;
+package lesson15.two_sum;
 
 public class Target {
 
